@@ -1,0 +1,469 @@
+*{
+    margin:0;
+    padding:0;
+    border:none;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*styles bootstrap*/
+nav{
+    position: fixed;
+}
+.bg-light {
+    background-color: #1a5c80 !important;
+    border-bottom: 15px solid #fff;
+    position: relative;
+}
+.bg-light:after{
+    content: "";
+    position: absolute;
+    border-bottom: 5px solid #1a5c80;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+}
+.navbar-light .navbar-nav .nav-link{
+    color:#fff;
+}
+.navbar-light .navbar-toggler {
+    color: #fff;
+    border-color: #fff;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url("../img/menu-sandwich.png");
+    color:#fff;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+li.navbar__left {
+    float: left;
+}
+
+li {
+    float: right;
+    color: #fff;
+}
+
+
+li a {
+    display: block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #feca85;
+    color: #1a5c80;
+    text-decoration: none;
+}
+img.navbar__img{
+    z-index:5;
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    left: 40px;
+    top:10px;
+}
+@media(max-width:768px){
+     img.navbar__img{
+        z-index:5;
+        position: absolute;
+        width: 80px;
+        height: 60px;
+        left: 20px;
+        top:10px;
+    }
+}
+
+.box--fondo{
+    width:100%;
+    display:inline-block;
+    z-index: 1;
+    background-image: url('../img/fondo-web.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main{
+    background-color:rgba(26,92,128, 0.9);
+    width:100%;
+}
+.box-datos{
+    margin-top:25%;
+    background-color:rgba(26,92,128, 0.9);
+}
+@media(max-width:768px){
+    .box-datos{
+        margin-top:10%;
+    }
+}
+
+.title {   
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    padding:20px;
+}
+@media (max-width: 768px) {
+    .title{
+        color: #fff;
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 50px;
+        padding: 10px;
+    }
+    iframe{
+        height: 300px;
+    }
+}
+
+
+.btn--action{
+    padding: 15px 20px;
+    border-radius: 40px;
+    border:2px solid #feca85;
+    text-align: center;
+    color: #feca85;
+    margin:30px;
+    background-color: transparent;
+}
+@media(max-width: 768px){
+        .btn--action{
+            width: 80%;
+            margin:0 auto;
+            margin:20px;
+    }
+}
+.btn--action:hover{
+    background-color: #feca85;
+    color: #1a5c80;
+    text-decoration: none; 
+}
+.box-multi{
+    margin-top:5%;
+}
+
+/*Formulario*/
+label{
+    color: #fff;
+}
+.title--form{
+    text-align: center;
+    padding-top:60px;
+    color:#fff;
+}
+#cuento{
+    width:100%;
+    border:1px solid #ddd;
+    border-radius: 4px;
+}
+#cuento::-webkit-input-placeholder {
+  padding:10px;
+}
+
+.box--descarga{
+    width:100%;
+    display: inline-block;
+    padding-bottom:20px;
+}
+.btn--send{
+    padding: 15px 20px;
+    border-radius: 40px;
+    text-align: center;
+    color: #fff;
+    background-color: #1a5c80;
+    margin-bottom:30px;
+}   
+.btn--disabled{
+    padding: 15px 20px;
+    border-radius: 40px;
+    text-align: center;
+    margin-bottom:30px;
+    background-color: #ddd;
+    color:#fff;
+}
+.btn--secundary{
+    padding: 15px 20px;
+    text-transform: uppercase;
+    color:#444;
+}
+.btn--secundary{
+    padding: 15px 20px;
+    text-transform: uppercase;
+    color:#444;
+}
+.btn--secundary:hover{
+    color:#000;
+    font-weight: 700;
+}
+a.form--btn__download{
+    color: #f4d572;
+}
+/*Formulario de éxito*/
+.banner-form{
+    background-image: url('../img/banner-form.jpg');
+    background-position: bottom;
+    background-size: cover; 
+    width:100%;
+    height: 200px;
+}
+.content-succes{
+     margin: 30px 0px;
+     background-color:rgba(26,92,128, 0.9);
+     padding:20px;
+}
+.title--success{
+    color:#fff;
+}
+.line{
+    background-color:#fff;
+}
+.p--success{
+    color:#fff;
+}
+.fa-check-circle{
+    color:#f4d572;
+    font-size:48px;
+    margin-bottom: 20px;
+}
+.text--disclaimer{
+    text-align: left;
+    font-size: 14px;
+    padding: 20px;
+    color:#fff;
+    text-align: justify;
+}
+.text--disclaimer__color{
+    color:#f4d572;
+}
+
+/*Seccion microcuentos*/
+.banner{
+    background-image: url('../img/banner.jpg');
+    background-position: center;
+    background-size: 
+    width:100%;
+    height: 200px;
+}
+.title--second{
+    margin-top:40px;
+    color:#fff;
+    text-align: center;
+    padding:20px;
+}
+.secciones{
+    margin: 40px 0px;
+    text-align: justify;
+}
+.galeria{
+    margin: 50px 5px;
+}
+
+.espacio{
+    padding:20px;
+    margin: 30px;
+}
+.title--base{
+    color:#fff;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom:20px;
+}
+@media(max-width:768px){
+    .title--base{
+        padding-top: 40px;
+    }
+}
+.p--base{
+    padding:10px 60px;
+    text-align: justify;
+    color:#fff;
+}
+@media(max-width:768px){
+    .p--base{
+        padding:10px 20px;
+    }
+}
+
+.banner--ganadores{
+    background-image:url('../img/banner-ganadores.jpg');
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+.version--2016{
+    background-image: url('../img/version2016.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:400px;
+    height: 250px;
+    margin:0 auto;
+    margin-bottom: 40px;
+}
+.version--2017{
+    background-image: url('../img/version2017.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:400px;
+    height: 250px;
+    margin:0 auto;
+    margin-bottom: 40px;
+}
+.version--2018{
+    background-image: url('../img/galeria2/01.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:400px;
+    height: 250px;
+    margin:0 auto;
+    margin-bottom: 40px;
+}
+.text--version{
+    color:#fff;
+    font-size: 21px;
+    font-weight: 700;
+    text-align:center;
+    padding-top: 30%;
+}
+.box--btn{
+    background-color: #1a5c80;
+    width:400px;
+    padding:20px;
+    margin:0 auto;
+    margin-bottom:40px;
+}
+
+@media(max-width:768px){
+    .version--2016{
+        width:100%;
+        margin: 0 auto;
+        margin-bottom:40px;
+    }
+    .version--2017{
+        width:100%;
+        margin: 0 auto;
+        margin-bottom:40px;
+    }
+    .version--2018{
+        width:100%;
+        margin: 0 auto;
+        margin-bottom:40px;
+    }
+    .box--btn{
+        width: 100%;
+    }
+}
+/*Equipo*/
+.banner--equipo{
+    background-image: url('../img/equipo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -113px;
+    height: 400px;
+    width:100%;
+}
+@media(max-width:768px){
+    .banner--equipo{
+        height: 300px;
+        background-position: center center;
+        width:100%;
+    }
+}
+.p--equipo{
+    padding:0px 40px;
+    text-align: justify;
+    color:#fff;
+}
+@media(max-width:768px){
+    .p--equipo{
+        padding:0px 20px;
+    }
+}
+.img--mision{
+    background-image: url('../img/equipo2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 200px;
+}
+.title--micro{
+    text-align: center;
+    padding-bottom: 30px;
+    color:#fff;
+}
+.e--name{
+    font-weight: 600;
+    margin-bottom: .2rem;
+    color:#fff;
+    padding: 0px 20px;
+}
+.e--carrera{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-style: italic;
+    font-size: 14px;
+    color:#fff;
+    padding: 0px 20px;
+}
+.e--cargo{
+    font-weight: 500;
+    color:#fff;
+    padding: 0px 20px;
+}
+.title--galeria{
+    text-align: center;
+    padding-top:60px;
+    color:#000;
+}
+.btn--galeria{
+    color: #fff;
+}
+.btn--galeria:hover{
+    color: #fff;
+    background-color: #fff;
+}
+/*fin formulario*/
+
+.footer--box{
+    padding: 10px;
+    padding-top: 3%;
+    background-color: #1a5c80;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    border-top: 5px solid #fff;
+}
+.box--col-footer{
+    padding: 15px 0px;
+}
+
+a.footer--icon {
+    border: 2px solid #feca85;
+    border-radius: 50%;
+    color: #feca85;
+    padding: 9px 12px;
+    font-size: 18px;
+    margin: 5px;
+}
+
+a.footer--icon:hover{
+    color:#fff;
+    border: 2px solid #fff;
+}
