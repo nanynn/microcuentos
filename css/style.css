@@ -443,6 +443,32 @@ a.form--btn__download{
     background-color: #fff;
 }
 /*fin formulario*/
+/*contacto*/
+.close{
+    margin-top:5px;
+    margin-right: 10px;
+}
+.btn--modal{
+    padding: 15px 20px;
+    border-radius: 40px;
+    border:2px solid #feca85;
+    text-align: center;
+    color: #feca85;
+    margin:10px 0px 20px 0px;
+    background-color: transparent;
+}
+@media(max-width: 768px){
+        .btn--action{
+            width: 80%;
+            margin:0 auto;
+            margin:20px;
+    }
+}
+.btn--modal:hover{
+    background-color: #feca85;
+    color: #1a5c80;
+    text-decoration: none; 
+}
 
 .footer--box{
     padding: 10px;
